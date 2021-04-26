@@ -1,6 +1,11 @@
 <template>
-  <div class="bg-primary">
-    <Fill :numeroItem="numeroPadre"></Fill>
+  <div class="caja bg-light">
+      <h3>Component Pare</h3>
+    <ul class="d-flex flex-column align-items-center">
+        <li v-for="item in numerosPadre" v-bind:key="item">
+        <Fill :numeroItem="item"></Fill>
+        </li>
+     </ul>
   </div>
 </template>
 
@@ -14,7 +19,7 @@ export default {
   },
   data(){
         return{
-            numeroPadre: 1
+            numerosPadre: ["item 1", "item 2","item 3"]
         }
     }
 }
@@ -35,5 +40,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.caja{
+    border: 5px solid green;
 }
 </style>

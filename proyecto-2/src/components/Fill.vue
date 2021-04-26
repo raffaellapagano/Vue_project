@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-danger m-auto" style="width: 200px">
-     <h4>Item {{numeroItem}}</h4>
+  <div class="border border-success m-3 p-3 bg-white caja">
+     <h4>{{numeroItem}}</h4>
      <button class="btn btn-success" @click="numero++">{{numero}}</button>
   </div>
 </template>
@@ -32,5 +32,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.caja{
+    width: 300px;
 }
 </style>
