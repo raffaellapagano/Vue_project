@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Pare msg="Soc el pare"/>
+    <Pare class="border border-success m-5" msg="Soc el pare"/>
   </div>
 </template>
 

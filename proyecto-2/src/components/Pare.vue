@@ -1,6 +1,6 @@
 <template>
-  <div class="pare">
-    <Fill msg="Soc el fill"/>
+  <div class="bg-primary">
+    <Fill :numeroItem="numeroPadre"></Fill>
   </div>
 </template>
 
@@ -12,9 +12,11 @@ export default {
    components: {
     Fill
   },
-  props: {
-    msg: String
-  }
+  data(){
+        return{
+            numeroPadre: 1
+        }
+    }
 }
 </script>
 

@@ -1,15 +1,19 @@
 <template>
-  <div class="fill">
-    <h1>{{ msg }}</h1>
+  <div class="bg-danger m-auto" style="width: 200px">
+     <h4>Item {{numeroItem}}</h4>
+     <button class="btn btn-success" @click="numero++">{{numero}}</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Fill',
-  props: {
-    msg: String
-  }
+  props:["numeroItem"],
+  data(){
+        return{ 
+            numero: 0
+        }
+    }
 }
 </script>
 
